@@ -26,4 +26,6 @@ const Search = () => {
   );
 };
 
+function SearchButton() {}
+
 export default Search;
