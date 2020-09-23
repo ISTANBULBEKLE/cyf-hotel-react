@@ -22,12 +22,12 @@ const TableRow = ({
       <td>{roomId}</td>
       <td>{checkInDate}</td>
       <td>{checkOutDate}</td>
-      <td>{calcNumberOfNights(checkInDate, checkOutDate)}</td>
+      <td>{NumberOfNights(checkInDate, checkOutDate)}</td>
     </tr>
   );
 };
 
-const calcNumberOfNights = (checkInDate, checkOutDate) => {
+const NumberOfNights = (checkInDate, checkOutDate) => {
   const checkIn = moment(checkInDate);
   const checkOut = moment(checkOutDate);
 
