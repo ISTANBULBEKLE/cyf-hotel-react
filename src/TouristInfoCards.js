@@ -7,17 +7,17 @@ const TouristInfoCards = () => {
       <div className="card-deck mt-5 mb-5">
         <TouristInfoCard
           link="https://peoplemakeglasgow.com"
-          imageSource="https://images.unsplash.com/photo-1531152127291-ea24c3b2a1da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          imageSource="https://www.visitbritain.com/sites/default/files/consumer/paragraphs-bundles/image-header-with-text/glasgow_clyde_arc_vb34161123.jpg"
           city="Glasgow"
         />
         <TouristInfoCard
           link="https://visitmanchester.com"
-          imageSource="https://images.unsplash.com/photo-1515586838455-8f8f940d6853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=984&q=80"
+          imageSource="https://www.techcelerate.ventures/wp-content/uploads/2017/10/manchester.jpg"
           city="Manchester"
         />
         <TouristInfoCard
           link="https://visitlondon.com"
-          imageSource="https://images.unsplash.com/photo-1488747279002-c8523379faaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+          imageSource="https://media.gettyimages.com/photos/skyscrapers-in-city-of-london-picture-id844050350?s=612x612"
           city="London"
         />
       </div>
