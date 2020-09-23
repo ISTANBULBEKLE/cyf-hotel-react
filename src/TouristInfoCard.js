@@ -10,7 +10,7 @@ const TouristInfoCard = ({ link, imageSource, city }) => {
       />
       <div className="card-body d-flex justify-content-center align-items-center">
         <a href={link} className="btn btn-primary">
-          Visit {city}
+          Welcome to {city}
         </a>
       </div>
     </div>
