@@ -55,3 +55,16 @@ tr {
 .card {
   width: 18rem;
 }
+.footer-info {
+  display: flex;
+  justify-content: center;
+}
+.footer-info-ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-info-ul-li {
+  font-weight: bold;
+  margin: 10px;
+  list-style-type: none;
+}
