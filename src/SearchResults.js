@@ -2,11 +2,11 @@ import React from "react";
 import TableHead from "./TableHead";
 import TableBody from "./TableBody";
 
-const SearchResults = ({ results }) => {
+const SearchResults = ({ searches }) => {
   return (
     <table className="table">
       <TableHead />
-      <TableBody bookings={results} />
+      <TableBody orders={searches} />
     </table>
   );
 };

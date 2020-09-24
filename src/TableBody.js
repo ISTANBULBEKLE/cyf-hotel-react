@@ -1,11 +1,11 @@
 import React from "react";
 import TableRow from "./TableRow";
 
-const TableBody = ({ bookings }) => {
+const TableBody = ({ orders }) => {
   return (
     <tbody>
-      {bookings.map(booking => (
-        <TableRow key={booking.id} booking={booking} />
+      {orders.map(order => (
+        <TableRow key={order.id} order={order} />
       ))}
     </tbody>
   );

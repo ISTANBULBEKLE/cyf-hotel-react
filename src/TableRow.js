@@ -2,7 +2,7 @@ import React from "react";
 import moment from "moment";
 
 const TableRow = ({
-  booking: {
+  order: {
     id,
     title,
     firstName,
