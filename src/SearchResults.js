@@ -6,7 +6,7 @@ const SearchResults = ({ searches }) => {
   return (
     <table className="table">
       <TableHead />
-      <TableBody orders={searches} />
+      <TableBody bookings={searches} />
     </table>
   );
 };
