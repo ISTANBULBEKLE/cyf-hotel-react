@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import moment from "moment";
 
 const TableRow = ({
-  booking: {
+  bookings: {
     id,
     title,
     firstName,
@@ -13,8 +13,23 @@ const TableRow = ({
     checkOutDate
   }
 }) => {
+  const [isMouseOver, setIsMouseOver] = useState(false);
+
+  function handleMouseOver() {
+    setIsMouseOver(true);
+  }
+
+  function handleMouseOut() {
+    setIsMouseOver(false);
+  }
+
   return (
-    <tr key={id}>
+    <tr
+      key={id}
+      style={{ backgroundColor: isMouseOver ? "yellow" : "white" }}
+      onMouseOver={handleMouseOver}
+      onMouseOut={handleMouseOut}
+    >
       <td>{title}</td>
       <td>{firstName}</td>
       <td>{surname}</td>

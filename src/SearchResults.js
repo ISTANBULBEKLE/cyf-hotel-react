@@ -3,6 +3,7 @@ import TableHead from "./TableHead";
 import TableBody from "./TableBody";
 
 const SearchResults = ({ searches }) => {
+  console.log(searches);
   return (
     <table className="table">
       <TableHead />

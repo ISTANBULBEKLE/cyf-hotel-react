@@ -10,8 +10,10 @@ const Footer = () => {
   return (
     <div className="footer-info container">
       <ul className="footer-info-ul">
-        {footerInfo.map(info => (
-          <li className="footer-info-ul-li">{info}</li>
+        {footerInfo.map((info, index) => (
+          <li className="footer-info-ul-li" key={index}>
+            {info}
+          </li>
         ))}
       </ul>
     </div>
