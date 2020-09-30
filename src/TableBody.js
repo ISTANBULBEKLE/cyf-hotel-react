@@ -4,9 +4,11 @@ import TableRow from "./TableRow";
 const TableBody = ({ bookings }) => {
   return (
     <tbody>
-      {/* {bookings.map(booking => (
-        <TableRow key={booking.id} booking={booking} />
-      ))} */}
+      {bookings &&
+        bookings.length > 0 &&
+        bookings.map(booking => (
+          <TableRow key={booking.id} booking={booking} />
+        ))}
     </tbody>
   );
 };
