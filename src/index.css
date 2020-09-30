@@ -24,3 +24,23 @@ body {
 .search-row input {
   margin-right: 10px;
 }
+.order-restaurant {
+  text-align: center;
+  text-decoration: none;
+}
+.order-restaurant-ul {
+  text-align: center;
+  text-decoration: none;
+}
+.order-restaurant-ul-li {
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.white-class {
+  background-color: white;
+}
+.yellow-class {
+  background-color: yellow;
+}

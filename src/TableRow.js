@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import moment from "moment";
 
 const TableRow = ({ booking }) => {
-  const [isMouseOver, setIsMouseOver] = useState(false);
+  const [rowClass, setRowClass] = useState(false);
 
-  function handleMouseOver() {
-    setIsMouseOver(true);
-  }
-
-  function handleMouseOut() {
-    setIsMouseOver(false);
+  function handleOnClick() {
+    setRowClass(!rowClass);
   }
 
   const {
@@ -24,11 +20,7 @@ const TableRow = ({ booking }) => {
   } = booking;
 
   return (
-    <tr
-      style={{ backgroundColor: isMouseOver ? "yellow" : "white" }}
-      onMouseOver={handleMouseOver}
-      onMouseOut={handleMouseOut}
-    >
+    <tr className={rowClass ? "yellow-class" : ""} onClick={handleOnClick}>
       <td>{title}</td>
       <td>{firstName}</td>
       <td>{surname}</td>
