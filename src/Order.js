@@ -10,7 +10,7 @@ const Order = ({ orderType }) => {
 
   return (
     <div>
-      <li>
+      <li className="order-restaurant-ul-li">
         {orderType}: {orders}
         <RestaurantButton order={orderOne} />
       </li>

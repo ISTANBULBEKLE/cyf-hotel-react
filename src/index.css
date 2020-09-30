@@ -26,16 +26,20 @@ body {
 }
 .order-restaurant {
   text-align: center;
-  text-decoration: none;
+  list-style-type: none;
 }
 .order-restaurant-ul {
+  display: flex;
+
   text-align: center;
-  text-decoration: none;
+  list-style-type: none;
+  margin: 5px;
 }
 .order-restaurant-ul-li {
+  justify-content: space-between;
   text-align: center;
-  text-decoration: none;
-  margin-bottom: 5px;
+  list-style-type: none;
+  margin: 5px;
 }
 
 .white-class {
