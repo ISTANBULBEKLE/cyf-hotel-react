@@ -9,7 +9,7 @@ const Bookings = () => {
     fetch("https://cyf-react.glitch.me")
       .then(response => response.json())
       .then(data => setNewBookings(data));
-  }, [fetch]);
+  }, []);
 
   const search = searchVal => {
     console.info("TO DO!", searchVal);
