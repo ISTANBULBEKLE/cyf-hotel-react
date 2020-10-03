@@ -9,7 +9,6 @@ const TableRow = ({ booking }) => {
   }
 
   const {
-    id,
     title,
     firstName,
     surname,
