@@ -30,7 +30,6 @@ body {
 }
 .order-restaurant-ul {
   display: flex;
-
   text-align: center;
   list-style-type: none;
   margin: 5px;
@@ -39,6 +38,9 @@ body {
   justify-content: space-between;
   text-align: center;
   list-style-type: none;
+  margin: 5px;
+}
+.order-button {
   margin: 5px;
 }
 

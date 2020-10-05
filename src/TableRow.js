@@ -15,7 +15,8 @@ const TableRow = ({ booking }) => {
     email,
     roomId,
     checkInDate,
-    checkOutDate
+    checkOutDate,
+    showProfile
   } = booking;
 
   return (
@@ -28,6 +29,9 @@ const TableRow = ({ booking }) => {
       <td>{checkInDate}</td>
       <td>{checkOutDate}</td>
       <td>{NumberOfNights(checkInDate, checkOutDate)}</td>
+      <button className="btn btn-outline-success">
+        Show Profile {showProfile}
+      </button>
     </tr>
   );
 };
