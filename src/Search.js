@@ -14,6 +14,8 @@ const Search = ({ search }) => {
     e.preventDefault();
     search(searchInput);
   }
+  // if (searchInput === "") {}
+
   return (
     <div className="search">
       <div className="page-header">

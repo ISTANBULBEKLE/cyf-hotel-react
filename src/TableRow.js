@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
 
-const TableRow = ({ booking }) => {
+const TableRow = ({ booking, changeId }) => {
   const [rowClass, setRowClass] = useState(false);
 
   function handleOnClick() {
@@ -9,6 +9,7 @@ const TableRow = ({ booking }) => {
   }
 
   const {
+    id,
     title,
     firstName,
     surname,
@@ -19,8 +20,13 @@ const TableRow = ({ booking }) => {
     showProfile
   } = booking;
 
+  function handleClick() {
+    changeId(id);
+  }
+
   return (
     <tr className={rowClass ? "yellow-class" : ""} onClick={handleOnClick}>
+      <td>{id}</td>
       <td>{title}</td>
       <td>{firstName}</td>
       <td>{surname}</td>
@@ -29,7 +35,7 @@ const TableRow = ({ booking }) => {
       <td>{checkInDate}</td>
       <td>{checkOutDate}</td>
       <td>{NumberOfNights(checkInDate, checkOutDate)}</td>
-      <button className="btn btn-outline-success">
+      <button onClick={handleClick} className="btn btn-outline-success">
         Show Profile {showProfile}
       </button>
     </tr>
