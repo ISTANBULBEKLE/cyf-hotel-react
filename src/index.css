@@ -50,3 +50,7 @@ body {
 .yellow-class {
   background-color: yellow;
 }
+
+.table-head {
+  background-color: rgba(206, 240, 205, 0.349);
+}

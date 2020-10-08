@@ -7,7 +7,6 @@ const Search = ({ search }) => {
   function handleSearchInput(e) {
     setSearchInput(e.target.value);
   }
-  const [submission, setSubmission] = useState("");
 
   function handleSubmission(e) {
     e.preventDefault();

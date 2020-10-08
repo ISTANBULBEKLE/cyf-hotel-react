@@ -2,8 +2,8 @@ import React from "react";
 
 const TableHead = () => {
   return (
-    <thead>
-      <tr>
+    <thead className="table-head">
+      <tr className="table-head">
         <th scope="col">Title</th>
         <th scope="col">First Name</th>
         <th scope="col">Surname</th>
