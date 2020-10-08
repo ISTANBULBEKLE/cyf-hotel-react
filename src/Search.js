@@ -5,7 +5,6 @@ const Search = ({ search }) => {
   const [searchInput, setSearchInput] = useState("");
 
   function handleSearchInput(e) {
-    console.log(e.target.value);
     setSearchInput(e.target.value);
   }
   const [submission, setSubmission] = useState("");
@@ -14,7 +13,6 @@ const Search = ({ search }) => {
     e.preventDefault();
     search(searchInput);
   }
-  // if (searchInput === "") {}
 
   return (
     <div className="search">

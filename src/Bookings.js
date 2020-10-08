@@ -5,6 +5,8 @@ import SearchResults from "./SearchResults.js";
 const Bookings = () => {
   const [bookings, setBookings] = useState([]);
 
+  const [dataloading, setDataLoading] = useState();
+
   useEffect(() => {
     fetch("https://cyf-react.glitch.me")
       .then(response => response.json())
