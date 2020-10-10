@@ -13,6 +13,7 @@ const App = () => {
       <TouristInfoCards />
       <Bookings />
       <Restaurant />
+      <hr />
       <Footer />
     </div>
   );

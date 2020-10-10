@@ -5,7 +5,7 @@ const TouristInfoCard = ({ link, imageSource, city }) => {
     <div className="card mx-auto mx-sm-1 mx-md-2 mx-lg-3">
       <img src={imageSource} alt={`City of ${city}`} className="card-img-top" />
       <div className="card-body d-flex justify-content-center align-items-center">
-        <a href={link} className="btn btn-primary">
+        <a href={link} className="btn btn-outline-success">
           Welcome to {city}
         </a>
       </div>

@@ -8,6 +8,10 @@ const TableRow = ({ booking, changeId }) => {
     setRowClass(!rowClass);
   }
 
+  function handleClick() {
+    changeId(id);
+  }
+
   const {
     id,
     title,
@@ -19,10 +23,6 @@ const TableRow = ({ booking, changeId }) => {
     checkOutDate,
     showProfile
   } = booking;
-
-  function handleClick() {
-    changeId(id);
-  }
 
   return (
     <tr className={rowClass ? "yellow-class" : ""} onClick={handleOnClick}>
