@@ -58,3 +58,15 @@ body {
 .footer-info {
   background-color: rgba(206, 240, 205, 0.349);
 }
+
+.customer-profile {
+  background-color: rgba(206, 240, 205, 0.349);
+  border: 2px solid rgb(197, 193, 193);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.customer-profile p {
+  margin: 5px;
+}

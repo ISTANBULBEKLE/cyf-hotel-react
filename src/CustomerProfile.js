@@ -10,7 +10,7 @@ const CustomerProfile = ({ id }) => {
   }, [id]);
 
   return profile ? (
-    <div>
+    <div className="customer-profile">
       <p>Customer Profile:{profile.id} </p>
       <p>Customer email:{profile.email}</p>
       <p>VIP:{profile.vip}</p>

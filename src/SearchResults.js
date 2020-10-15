@@ -3,7 +3,7 @@ import TableHead from "./TableHead";
 import TableBody from "./TableBody";
 import CustomerProfile from "./CustomerProfile";
 
-const SearchResults = ({ results, id }) => {
+const SearchResults = ({ results }) => {
   const [customerID, setCustomerID] = useState("");
 
   function changeId(d) {
